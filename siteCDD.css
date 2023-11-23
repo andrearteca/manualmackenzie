@@ -369,7 +369,8 @@
     .row2{
         align-items: center;
         box-sizing: border-box;
-        height: 650px;
+        height: 30%;
+        flex-wrap: wrap;
     }
 
 
@@ -386,21 +387,18 @@
         padding: 80px 50px;
     }
 
-    /* .rowTxt h3, .rowTxt p{
-        padding: 0px 50px 0px 50px;
-    } */
-
     .padding{
         padding: 0px 100px 0px 50px;
     }
 
     .rowImg{
         width: 50%;
-        height: 650px;        
+        /* height: 45%;     */
     }
+    
     .rowImg img{
         width: 100%;
-        height: 650px;
+        min-height: 700px;
         object-fit: cover;
     }
 
@@ -411,12 +409,13 @@
     .boxes{
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
         justify-content: space-between;
     }
     .boxes div{
         width: 25%;
         padding: 30px;
-        height: 270px;
+        min-height: 270px;
     }
 
     .orangeBox{
