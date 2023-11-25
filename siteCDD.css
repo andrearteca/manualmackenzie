@@ -312,6 +312,11 @@
         justify-content: space-between;
     }
 
+    #cdd{
+        min-height: 200px;
+        object-fit: cover;
+    }
+
     .diretorio{
         background: #00C3CA;
         width: 30%;
