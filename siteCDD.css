@@ -245,6 +245,7 @@
     .textImage{
         display: flex;
         justify-content: space-between;
+        align-content: center;
         padding-bottom: 30px;
         aspect-ratio: auto;
     }
@@ -255,6 +256,10 @@
     .textImage img{
         width: 40%;
         object-fit:contain;
+    }
+
+    .textImage iframe{
+        width: 40%;
     }
 
     /* APOIO */
