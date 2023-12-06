@@ -4,6 +4,7 @@ var imagens = ["dafam.jpg", "dacam.jpg", "dada.jpg", "cajmjr.jpg", "cahl.jpg", "
 var nomes = ["DAFAM", "DACAM", "DADA", "CAJMJR",  "CAHL", "DAEG", "CAEG"]
 var links = ["https://www.instagram.com/gestaodafam/", "https://www.instagram.com/dacammack/", "https://www.instagram.com/dada_ca/", "https://www.instagram.com/cajmjr/", "https://www.instagram.com/cahl.mackenzie/", "https://www.instagram.com/daegmack/", "https://www.instagram.com/caeg_mack/"]
 
+//Essa função faz o carrossel de Diretórios Acadêmicos ir para frente, trocando todas as imagens
 function rolarFrente() {
     var imgD1 = document.getElementById('imgD1');
     var imgD2 = document.getElementById('imgD2');
@@ -57,6 +58,7 @@ function rolarFrente() {
         
 }
 
+//Essa função faz o carrossel de Diretórios Acadêmicos ir para trás, trocando todas as imagens
 function rolarTras() {
     var imgD1 = document.getElementById('imgD1');
     var imgD2 = document.getElementById('imgD2');
@@ -97,4 +99,12 @@ function rolarTras() {
             } 
         }
         
+}function enviarEmail() {
+    var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+
+    if (document.getElementById("email").value.match(validRegex)) {
+        alert("Entraremos em contato em breve")
+    } else {
+      alert("E-Mail inválido")
+    }
 }
