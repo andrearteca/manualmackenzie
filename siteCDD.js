@@ -99,7 +99,9 @@ function rolarTras() {
             } 
         }
         
-}function enviarEmail() {
+}
+//Essa função vai validar o input do email no final do site para ver se é um input válido de formato de email ou não. Nos dois casos vai aparecer um alerta.
+function enviarEmail() {
     var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
     if (document.getElementById("email").value.match(validRegex)) {
